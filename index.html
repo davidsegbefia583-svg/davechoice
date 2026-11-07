@@ -270,8 +270,13 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
 
   alert("Welcome back to Dave Choice!");
 
-  document.getElementById("loginBox").style.display = "none";
-  document.getElementById("dashboard").style.display = "block";
+  ddocument.getElementById("loginBox").style.display = "none";
+
+document.querySelectorAll(".page").forEach(page => {
+  page.classList.add("hidden");
+});
+
+document.getElementById("page-home").classList.remove("hidden");
 });
 </script>
 </body>
