@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101014">
+<title>Dave Choice | Photography & Studio Booking</title>
+<style>
+:root{--bg:#f5f5f7;--panel:#fff;--panel2:#ededf1;--text:#17171c;--muted:#74747f;--line:#e4e4e9;--accent:#d6a85f;--accent2:#b9873d;--nav:#fff;--shadow:0 12px 36px rgba(20,20,30,.07);--green:#18865b;--red:#c54d4d}
+[data-theme="dark"]{--bg:#101014;--panel:#1a1a21;--panel2:#25252e;--text:#f4f4f6;--muted:#a2a2ad;--line:#30303a;--accent:#e2b66e;--accent2:#c99549;--nav:#17171d;--shadow:0 12px 36px rgba(0,0,0,.25)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;transition:.2s}button,input,select{font:inherit}button{cursor:pointer}.hidden{display:none!important}.app{min-height:100vh}.auth-wrap{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;background:var(--bg)}.auth-visual{padding:52px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:linear-gradient(160deg,rgba(0,0,0,.2),rgba(0,0,0,.8)),url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=85') center/cover;min-height:100vh}.brand{font-size:24px;font-weight:850;letter-spacing:-1px}.brand span{color:var(--accent)}.visual-copy h1{font-size:clamp(38px,5vw,68px);line-height:1.02;max-width:570px;margin:0 0 18px}.visual-copy p{color:#e0e0e0;max-width:440px}.auth-panel{display:flex;align-items:center;justify-content:center;padding:32px}.auth-card{width:min(100%,430px)}.auth-card h2{font-size:30px;letter-spacing:-1px;margin:30px 0 6px}.sub{color:var(--muted);margin:0 0 24px}.field{display:grid;gap:7px;margin:15px 0}.field label{font-size:13px;font-weight:700}.field input,.field select{width:100%;padding:14px 15px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);outline:none}.field input:focus,.field select:focus{border-color:var(--accent)}.rowline{display:flex;align-items:center;justify-content:space-between;gap:12px}.link{border:0;background:none;color:var(--accent2);font-weight:700;padding:0}.btn{border:0;border-radius:12px;padding:13px 18px;background:var(--accent);color:#17130c;font-weight:800;transition:.15s}.btn:hover{transform:translateY(-1px);background:var(--accent2)}.btn.full{width:100%;margin-top:12px}.btn.secondary{background:var(--panel2);color:var(--text)}.btn.outline{background:transparent;border:1px solid var(--line);color:var(--text)}.auth-switch{text-align:center;color:var(--muted);margin-top:22px}.notice{padding:11px 13px;border-radius:10px;background:var(--panel2);color:var(--muted);font-size:12px;margin-top:18px}.shell{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.sidebar{background:var(--nav);border-right:1px solid var(--line);padding:26px 17px;display:flex;flex-direction:column;position:sticky;top:0;height:100vh}.sidebar .brand{padding:0 12px 32px}.nav-label{font-size:10px;color:var(--muted);font-weight:800;letter-spacing:1.4px;padding:10px 12px}.nav-btn{display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:0;border-radius:11px;background:transparent;color:var(--muted);text-align:left;font-weight:650;margin:2px 0}.nav-btn.active,.nav-btn:hover{background:var(--panel2);color:var(--text)}.nav-btn.active{box-shadow:inset 3px 0 var(--accent)}.nav-icon{width:22px;text-align:center;font-size:17px}.side-bottom{margin-top:auto;border-top:1px solid var(--line);padding-top:17px}.user-mini{display:flex;gap:10px;align-items:center;padding:12px}.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--panel2);font-weight:800;color:var(--accent2);flex-shrink:0}.user-mini strong{display:block;font-size:13px}.user-mini small{color:var(--muted)}.main{min-width:0;padding:30px clamp(18px,4vw,48px) 100px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}.eyebrow{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}.top-actions{display:flex;gap:9px;align-items:center}.icon-btn{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:11px;width:42px;height:42px}.greeting{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.greeting h1{font-size:clamp(27px,4vw,38px);letter-spacing:-1.4px;margin:5px 0}.greeting p{color:var(--muted);margin:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:26px}.stat,.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:var(--shadow)}.stat-top{display:flex;justify-content:space-between;color:var(--muted);font-size:13px}.stat strong{display:block;font-size:30px;letter-spacing:-1px;margin-top:12px}.stat small{color:var(--muted)}.section-head{display:flex;justify-content:space-between;align-items:center;margin:26px 0 13px}.section-head h2{font-size:18px;margin:0;letter-spacing:-.4px}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.quick{border:1px solid var(--line);background:var(--panel);border-radius:15px;padding:18px;text-align:left;color:var(--text)}.quick:hover{border-color:var(--accent)}.quick .qicon{font-size:24px;display:block;margin-bottom:12px}.quick strong{display:block}.quick small{color:var(--muted)}.booking-list{display:grid;gap:10px}.booking-row{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px;border:1px solid var(--line);border-radius:13px;background:var(--panel)}.booking-left{display:flex;gap:13px;align-items:center;min-width:0}.date-tile{background:var(--panel2);border-radius:10px;padding:8px 11px;text-align:center;min-width:52px}.date-tile b{font-size:18px;display:block}.date-tile small{font-size:10px;color:var(--muted);text-transform:uppercase}.booking-row strong{display:block}.booking-row small{color:var(--muted)}.status{display:inline-block;border-radius:99px;padding:5px 9px;font-size:11px;font-weight:800;background:#e4f5ec;color:#16744d}.status.pending{background:#fff1d9;color:#99651d}.status.cancelled{background:#fde8e8;color:#a33d3d}.status.completed{background:#e8eafa;color:#4b56a2}.page-title{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:8px 0 22px}.page-title h1{font-size:30px;letter-spacing:-1px;margin:0}.page-title p{color:var(--muted);margin:3px 0}.tabs{display:flex;gap:7px;overflow:auto;margin:16px 0}.tab{white-space:nowrap;border:1px solid var(--line);background:var(--panel);color:var(--muted);padding:9px 14px;border-radius:10px;font-weight:700;font-size:13px}.tab.active{background:var(--text);color:var(--bg);border-color:var(--text)}.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}.filters input,.filters select{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:10px 12px;border-radius:10px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-card{max-width:760px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 15px}.form-grid .wide{grid-column:1/-1}.studio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.studio{overflow:hidden;padding:0}.studio img{width:100%;height:165px;object-fit:cover;display:block}.studio-info{padding:16px}.studio-info p{color:var(--muted);font-size:13px}.money{font-size:27px;font-weight:850;letter-spacing:-1px}.profile-head{display:flex;align-items:center;gap:15px;margin-bottom:20px}.profile-head .avatar{width:64px;height:64px;font-size:22px}.profile-details{display:grid;grid-template-columns:1fr 1fr;gap:12px}.detail{padding:14px;background:var(--panel2);border-radius:11px}.detail small{display:block;color:var(--muted);margin-bottom:4px}.detail strong{overflow-wrap:anywhere}.bottom-nav{display:none}.toast{position:fixed;right:20px;bottom:25px;background:var(--text);color:var(--bg);padding:12px 17px;border-radius:12px;box-shadow:var(--shadow);z-index:20}.empty{text-align:center;padding:40px 15px;color:var(--muted)}.admin-banner{background:linear-gradient(110deg,#26222a,#51402c);color:#fff;padding:18px;border-radius:15px;margin-bottom:20px}.admin-banner p{color:#ddd;margin:4px 0 0}.table-wrap{overflow:auto}.simple-table{width:100%;border-collapse:collapse;min-width:600px}.simple-table th,.simple-table td{text-align:left;padding:13px;border-bottom:1px solid var(--line);font-size:13px}.simple-table th{color:var(--muted)}.danger{color:var(--red)}
+@media(max-width:900px){.shell{grid-template-columns:1fr}.sidebar{display:none}.main{padding:22px 17px 100px}.bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:10;display:flex;justify-content:space-around;background:var(--nav);border-top:1px solid var(--line);padding:8px 4px calc(8px + env(safe-area-inset-bottom))}.bottom-nav button{border:0;background:none;color:var(--muted);font-size:10px;display:grid;gap:2px;justify-items:center;min-width:48px}.bottom-nav button span{font-size:20px}.bottom-nav button.active{color:var(--accent2)}.bottom-nav .plus{background:var(--accent);color:#17130c;border-radius:15px;padding:5px 13px;margin-top:-18px;font-size:22px}.stats{gap:9px}.stat{padding:14px}.stat strong{font-size:24px}.quick-grid{grid-template-columns:repeat(2,1fr)}.studio-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.auth-wrap{grid-template-columns:1fr}.auth-visual{display:none}.auth-panel{min-height:100vh;padding:24px}.auth-card h2{margin-top:20px}.greeting{align-items:start;flex-direction:column}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat-top{font-size:11px}.stat strong{font-size:21px}.stat small{font-size:10px}.quick{padding:14px}.quick small{font-size:11px}.two-col,.form-grid,.profile-details{grid-template-columns:1fr}.form-grid .wide{grid-column:auto}.studio-grid{grid-template-columns:1fr}.studio img{height:190px}.page-title{align-items:flex-start;flex-direction:column}.booking-row{align-items:flex-start}.booking-row>.status{margin-top:4px}.filters>*{flex:1;min-width:125px}.main{padding-top:17px}}
+</style>
+</head>
+<body>
+<div id="auth" class="auth-wrap">
+ <section class="auth-visual"><div class="brand">DAVE <span>CHOICE</span></div><div class="visual-copy"><h1>Every moment deserves a great frame.</h1><p>Book your photography session, explore our studios and keep every memory in one place.</p></div><small>© 2026 Dave Choice Photography</small></section>
+ <section class="auth-panel"><div class="auth-card">
+  <div class="brand">DAVE <span>CHOICE</span></div>
+ 
+<div id="loginBox">
+  <h2>Welcome back</h2>
+  <p class="sub">Sign in to manage your photography experience.</p>
+
+  <form id="loginForm">
+    <div class="field">
+      <label>Email address</label>
+      <input
+        id="loginEmail"
+        type="email"
+        placeholder="you@example.com"
+        required
+      >
+    </div>
+
+    <div class="field">
+      <div class="rowline">
+        <label>Password</label>
+        <button type="button" class="link" onclick="showAuth('forgot')">
+          Forgot password?
+        </button>
+      </div>
+
+      <input
+        id="loginPassword"
+        type="password"
+        placeholder="Enter your password"
+        required
+      >
+    </div>
+
+    <button class="btn full" type="submit">Sign in</button>
+  </form>
+
+  <div class="auth-switch">
+    New to Dave Choice?
+    <button class="link" onclick="showAuth('register')">
+      Create an account
+    </button>
+  </div>
+
+  <div class="notice">
+    Sign in securely with your Dave Choice account.
+  </div>
+</div>
+
+  <div id="registerBox" class="hidden"><h2>Create your account</h2><p class="sub">Welcome to Dave Choice. Let's get you started.</p>
+   <form id="registerForm"><div class="field"><label>Full name</label><input id="regName" required placeholder="Your full name"></div><div class="field"><label>Mobile phone number</label><input id="regPhone" type="tel" required placeholder="+233 24 000 0000"></div><div class="field"><<label>Email address</label>
+<input id="regEmail" type="email"
+       placeholder="you@example.com" required>F</div><div class="field"><label>Create password</label><input id="regPassword" type="password" minlength="6" required placeholder="At least 6 characters"></div><div class="field"><label>Confirm password</label><input id="regConfirm" type="password" required placeholder="Repeat password"></div><button class="btn full">Create account</button></form>
+   <div class="auth-switch">Already have an account? <button class="link" onclick="showAuth('login')">Sign in</button></div>
+  </div>
+  <div id="forgotBox" class="hidden"><h2>Reset password</h2><p class="sub">Enter your registered phone number to continue.</p><form id="forgotForm"><div class="field"><label>Mobile phone number</label><input id="forgotPhone" type="tel" required placeholder="+233 24 000 0000"></div><div class="field"><label>New password</label><input id="newPassword" type="password" minlength="6" required placeholder="New password"></div><button class="btn full">Reset password</button></form><div class="auth-switch"><button class="link" onclick="showAuth('login')">Back to sign in</button></div><div class="notice">Demo only: a real deployment must verify ownership by SMS OTP before allowing a reset.</div></div>
+ </div></section>
+</div>
+<div id="app" class="app hidden">
+ <div class="shell">
+  <aside class="sidebar"><div class="brand">DAVE <span>CHOICE</span></div><div class="nav-label">WORKSPACE</div>
+   <button class="nav-btn active" data-page="home"><span class="nav-icon">⌂</span>Home</button>
+   <button class="nav-btn" data-page="booking"><span class="nav-icon">＋</span>Book session</button>
+   <button class="nav-btn" data-page="studios"><span class="nav-icon">▣</span>Studio rentals</button>
+   <button class="nav-btn" data-page="bookings"><span class="nav-icon">▤</span>My bookings</button>
+   <button class="nav-btn" data-page="transactions"><span class="nav-icon">◈</span>Transactions</button>
+   <button class="nav-btn" data-page="profile"><span class="nav-icon">◉</span>Profile</button>
+   <div class="side-bottom"><button class="nav-btn" onclick="toggleTheme()"><span class="nav-icon">◐</span>Change theme</button><button class="nav-btn" id="adminNav" data-page="admin"><span class="nav-icon">⚙</span>Owner dashboard</button><div class="user-mini"><div class="avatar" id="sideAvatar">DC</div><div><strong id="sideName">Customer</strong><small>Customer account</small></div></div><button class="nav-btn" onclick="signOut()">⇥ Sign out</button></div>
+  </aside>
+  <main class="main">
+   <div class="topbar"><div><div class="eyebrow">DAVE CHOICE / <span id="crumb">HOME</span></div></div><div class="top-actions"><button class="icon-btn" onclick="toggleTheme()" title="Toggle theme">◐</button><div class="avatar" id="topAvatar">DC</div></div></div>
+   <section id="page-home" class="page">
+    <div class="greeting"><div><div class="eyebrow" id="timeGreeting">GOOD MORNING</div><h1 id="welcomeName">Hello, Customer 👋</h1><p>Here's what's happening with your photography bookings.</p></div><button class="btn" onclick="navigate('booking')">＋ Book a session</button></div>
+    <div class="stats"><div class="stat"><div class="stat-top">Booking hours <span>◷</span></div><strong id="hoursStat">0 hrs</strong><small>Hours booked</small></div><div class="stat"><div class="stat-top">Upcoming sessions <span>▣</span></div><strong id="upcomingStat">0</strong><small>Ready for your next shoot</small></div><div class="stat"><div class="stat-top">Total bookings <span>▤</span></div><strong id="totalStat">0</strong><small>All-time sessions</small></div></div>
+    <div class="section-head"><h2>Quick actions</h2></div><div class="quick-grid">
+     <button class="quick" onclick="navigate('booking')"><span class="qicon">📸</span><strong>Book session</strong><small>Reserve your next shoot</small></button>
+     <button class="quick" onclick="navigate('studios')"><span class="qicon">🏢</span><strong>Our studios</strong><small>Explore studio spaces</small></button>
+     <button class="quick" onclick="navigate('bookings')"><span class="qicon">🗓️</span><strong>My bookings</strong><small>Manage your sessions</small></button>
+     <button class="quick" onclick="navigate('transactions')"><span class="qicon">💳</span><strong>Transactions</strong><small>View payment history</small></button>
+    </div>
+    <div class="section-head"><h2>Recent bookings</h2><button class="link" onclick="navigate('bookings')">View all →</button></div><div id="recentBookings" class="booking-list"></div>
+   </section>
+   <section id="page-booking" class="page hidden"><div class="page-title"><div><h1>Book a session</h1><p>Choose your preferred date, time and photography service.</p></div></div>
+    <div class="card form-card"><form id="bookingForm"><div class="form-grid">
+     <div class="field"><label>Session type</label><select id="sessionType"><option>Portrait photography</option><option>Wedding photography</option><option>Birthday / Event</option><option>Family photography</option><option>Product photography</option><option>Studio rental</option></select></div>
+     <div class="field"><label>Studio</label><select id="sessionStudio"><option>Dave Choice Main Studio</option><option>Natural Light Studio</option><option>Creative Space</option><option>Outdoor location</option></select></div>
+     <div class="field"><label>Pick a date</label><input id="sessionDate" type="date" required></div>
+     <div class="field"><label>Pick a time</label><select id="sessionTime" required><option value="">Select a time</option><option>08:00 AM</option><option>09:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>01:00 PM</option><option>02:00 PM</option><option>03:00 PM</option><option>04:00 PM</option><option>05:00 PM</option></select></div>
+     <div class="field"><label>Duration</label><select id="sessionDuration"><option value="1">1 hour</option><option value="2">2 hours</option><option value="3">3 hours</option><option value="4">4 hours</option></select></div>
+     <div class="field"><label>Number of people</label><input id="sessionPeople" type="number" min="1" max="30" value="1"></div>
+     <div class="field wide"><label>Additional notes (optional)</label><input id="sessionNotes" placeholder="Tell us anything we should know"></div>
+    </div><button class="btn">Submit booking request</button></form><div class="notice">Your request will appear in My bookings with a pending status. The studio team can confirm it and update payment status.</div></div>
+   </section>
+   <section id="page-bookings" class="page hidden"><div class="page-title"><div><h1>My bookings</h1><p>Track and manage all your photography sessions.</p></div><button class="btn" onclick="navigate('booking')">＋ New booking</button></div>
+    <div class="stats"><div class="stat"><div class="stat-top">All bookings</div><strong id="allCount">0</strong></div><div class="stat"><div class="stat-top">Upcoming</div><strong id="upCount">0</strong></div><div class="stat"><div class="stat-top">Completed</div><strong id="doneCount">0</strong></div></div>
+    <div class="filters"><input id="bookingSearch" placeholder="Search booking or service…"><input id="bookingDateFilter" type="date" aria-label="Search by date"><select id="bookingTimeFilter"><option value="">Any time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+    <div class="tabs" id="bookingTabs"><button class="tab active" data-filter="All">All</button><button class="tab" data-filter="Upcoming">Upcoming</button><button class="tab" data-filter="Completed">Completed</button><button class="tab" data-filter="Cancelled">Cancelled</button></div><div id="allBookings" class="booking-list"></div>
+   </section>
+   <section id="page-studios" class="page hidden"><div class="page-title"><div><h1>Our studios</h1><p>Find the right creative space for your next session.</p></div><button class="btn" onclick="navigate('booking')">Book a studio</button></div>
+    <div class="studio-grid">
+     <article class="card studio"><img src="https://images.unsplash.com/photo- studio" onerror="this.src='https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80'" alt="Main studio"><div class="studio-info"><h3>Main Photography Studio</h3><p>Versatile space for portraits, fashion and commercial shoots.</p><div class="rowline"><strong>Contact for pricing</strong><button class="link" onclick="bookStudio('Dave Choice Main Studio')">Book →</button></div></div></article>
+     <article class="card studio"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80" alt="Natural light studio"><div class="studio-info"><h3>Natural Light Studio</h3><p>Bright, airy setting for lifestyle and family photography.</p><div class="rowline"><strong>Contact for pricing</strong><button class="link" onclick="bookStudio('Natural Light Studio')">Book →</button></div></div></article>
+     <article class="card studio"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80" alt="Creative studio"><div class="studio-info"><h3>Creative Space</h3><p>A flexible space for content creators and creative projects.</p><div class="rowline"><strong>Contact for pricing</strong><button class="link" onclick="bookStudio('Creative Space')">Book →</button></div></div></article>
+    </div><div class="notice">Studio photos and descriptions are sample content. Replace them with your real studio details, rates and availability.</div>
+   </section>
+   <section id="page-transactions" class="page hidden"><div class="page-title"><div><h1>Transactions</h1><p>See your payments and outstanding balances.</p></div></div>
+    <div class="stats"><div class="stat"><div class="stat-top">Total spent</div><strong id="spentTotal">GH₵0</strong><small>Successful payments</small></div><div class="stat"><div class="stat-top">Total transactions</div><strong id="transactionCount">0</strong><small>All payment records</small></div><div class="stat"><div class="stat-top">Successful</div><strong id="successCount">0</strong><small>Paid transactions</small></div></div>
+    <div class="section-head"><h2>Payment history</h2></div><div id="transactionList" class="booking-list"></div><div class="notice">Payments are demo records only. Connect a payment provider such as Paystack or Flutterwave before accepting real payments.</div>
+   </section>
+   <section id="page-profile" class="page hidden"><div class="page-title"><div><h1>My profile</h1><p>Manage your personal and account information.</p></div></div>
+    <div class="card form-card"><div class="profile-head"><div class="avatar" id="profileAvatar">DC</div><div><h2 id="profileName" style="margin:0">Customer</h2><small style="color:var(--muted)">Dave Choice customer</small></div></div>
+     <div class="profile-details" id="profileDetails"></div><div class="section-head"><h2>Update details</h2></div><form id="profileForm"><div class="field"><label>Full name</label><input id="editName" required></div><div class="field"><label>Email address</label><input id="editEmail" type="email"></div><div class="field"><label>Mobile phone number</label><input id="editPhone" type="tel" required></div><button class="btn">Save changes</button></form>
+     <div class="notice">Account ID is generated automatically. Phone verification shown in this demo is a placeholder; real verification requires an SMS OTP service.</div>
+    </div>
+   </section>
+   <section id="page-admin" class="page hidden"><div class="page-title"><div><h1>Owner dashboard</h1><p>Overview of activity stored in this browser demo.</p></div></div><div class="admin-banner"><strong>Company workspace</strong><p>Review demo accounts, booking requests and payment states. Secure owner access and shared database sync must be added on the server.</p></div>
+    <div class="stats"><div class="stat"><div class="stat-top">Customer accounts</div><strong id="adminCustomers">0</strong></div><div class="stat"><div class="stat-top">All bookings</div><strong id="adminBookings">0</strong></div><div class="stat"><div class="stat-top">Pending requests</div><strong id="adminPending">0</strong></div></div>
+    <div class="section-head"><h2>All booking activity</h2></div><div class="card table-wrap"><table class="simple-table"><thead><tr><th>Customer</th><th>Service</th><th>Date & time</th><th>Status</th><th>Payment</th><th>Actions</th></tr></thead><tbody id="adminTable"></tbody></table></div>
+    <div class="section-head"><h2>Customer accounts on this device</h2></div><div class="card table-wrap"><table class="simple-table"><thead><tr><th>Account ID</th><th>Name</th><th>Phone</th><th>Email</th></tr></thead><tbody id="adminUsers"></tbody></table></div>
+   </section>
+  </main>
+ </div>
+ <nav class="bottom-nav"><button data-page="home" class="active"><span>⌂</span>Home</button><button data-page="studios"><span>▣</span>Studio</button><button data-page="booking"><span class="plus">＋</span>Book</button><button data-page="bookings"><span>▤</span>Booking</button><button data-page="profile"><span>◉</span>Profile</button></nav>
+</div>
+<div id="toast" class="toast hidden"></div>
+<script>
+const $=id=>document.getElementById(id);
+const get=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}};
+const put=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+let users=get('dc_users',[]), bookings=get('dc_bookings',[]), transactions=get('dc_transactions',[]), current=get('dc_current',null), activeFilter='All';
+function saveAll(){put('dc_users',users);put('dc_bookings',bookings);put('dc_transactions',transactions);if(current)put('dc_current',current)}
+function initials(n){return (n||'DC').trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase()}
+function showToast(s){$('toast').textContent=s;$('toast').classList.remove('hidden');setTimeout(()=>$('toast').classList.add('hidden'),2800)}
+function showAuth(which){['login','register','forgot'].forEach(x=>$(x+'Box').classList.toggle('hidden',x!==which))}
+function signOut(){current=null;localStorage.removeItem('dc_current');$('app').classList.add('hidden');$('auth').classList.remove('hidden');showAuth('login')}
+function loginUser(u){current=u;put('dc_current',u);$('auth').classList.add('hidden');$('app').classList.remove('hidden');refresh();navigate('home')}
+function currentUser(){return users.find(u=>u.id===current?.id)||current}
+
+document.getElementById("registerForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("regName").value.trim();
+  const phone = document.getElementById("regPhone").value.trim();
+  const email = document.getElementById("regEmail").value.trim();
+  const password = document.getElementById("regPassword").value;
+  const confirmPassword = document.getElementById("regConfirm").value;
+
+  if (password !== confirmPassword) {
+    alert("Your passwords do not match.");
+    return;
+  }
+
+  const button = this.querySelector('button[type="submit"], button:not([type])');
+  button.disabled = true;
+  button.textContent = "Creating account...";
+
+  try {
+    const { data, error } = await supabaseClient.auth.signUp({
+      email: email,
+      password: password,
+      options: {
+        data: {
+          full_name: name,
+          phone: phone
+        }
+      }
+    });
+
+    if (error) throw error;
+
+    alert("Account created! Please check your email for a verification link before signing in.");
+
+    this.reset();
+    showAuth("login");
+
+  } catch (error) {
+    alert("Registration failed: " + error.message);
+  } finally {
+    button.disabled = false;
+    button.textContent = "Create account";
+  }
+});
+
+$('loginForm').addEventListener('submit',e=>{e.preventDefault();let u=users.find(x=>x.phone===$('loginPhone').value.trim()&&x.password===$('loginPassword').value);if(!u)return showToast('Phone number or password is incorrect.');loginUser(u)});
+$('forgotForm').addEventListener('submit',e=>{e.preventDefault();let u=users.find(x=>x.phone===$('forgotPhone').value.trim());if(!u)return showToast('No account found for this number.');u.password=$('newPassword').value;saveAll();showAuth('login');showToast('Demo password updated. Add SMS verification for production.')});
+function navigate(page){document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));$('page-'+page)?.classList.remove('hidden');document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$('crumb').textContent=page.toUpperCase();if(page==='bookings')renderBookings();if(page==='transactions')renderTransactions();if(page==='profile')renderProfile();if(page==='admin')renderAdmin();window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>navigate(b.dataset.page)));
+function refresh(){let u=currentUser();if(!u)return;current=u;let name=u.name||'Customer';$('sideName').textContent=name;$('sideAvatar').textContent=initials(name);$('topAvatar').textContent=initials(name);$('welcomeName').textContent='Hello, '+name+' 👋';$('timeGreeting').textContent=new Date().getHours()<12?'GOOD MORNING':new Date().getHours()<17?'GOOD AFTERNOON':'GOOD EVENING';let mine=bookings.filter(b=>b.userId===u.id),up=mine.filter(b=>b.status==='Upcoming'||b.status==='Pending');$('hoursStat').textContent=mine.reduce((s,b)=>s+Number(b.duration||1),0)+' hrs';$('upcomingStat').textContent=up.length;$('totalStat').textContent=mine.length;$('recentBookings').innerHTML=mine.length?mine.slice().sort((a,b)=>b.created.localeCompare(a.created)).slice(0,3).map(bookingHTML).join(''):'<div class="card empty">No bookings yet. Your next great photo starts here.</div>';renderBookings();renderTransactions()}
+function bookingHTML(b){let d=new Date(b.date+'T12:00:00');let cls=b.status==='Cancelled'?'cancelled':b.status==='Completed'?'completed':b.payment==='Paid'?'':'pending';return `<div class="booking-row"><div class="booking-left"><div class="date-tile"><b>${d.getDate()}</b><small>${d.toLocaleString('en',{month:'short'})}</small></div><div><strong>${escapeHTML(b.type)}</strong><small>${escapeHTML(b.studio)} · ${escapeHTML(b.time)} · ${b.duration} hr${b.duration>1?'s':''}</small></div></div><span class="status ${cls}">${b.status}</span></div>`}
+function escapeHTML(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+$('bookingForm').addEventListener('submit',e=>{e.preventDefault();let u=currentUser(),date=$('sessionDate').value;if(!date)return;let b={id:'BK-'+Date.now().toString().slice(-7),userId:u.id,customer:u.name,type:$('sessionType').value,studio:$('sessionStudio').value,date,time:$('sessionTime').value,duration:Number($('sessionDuration').value),people:$('sessionPeople').value,notes:$('sessionNotes').value,status:'Pending',payment:'Unpaid',created:new Date().toISOString()};bookings.push(b);saveAll();e.target.reset();showToast('Booking request submitted.');refresh();navigate('bookings')});
+function bookStudio(s){$('sessionStudio').value=s;navigate('booking')}
+function renderBookings(){let u=currentUser();if(!u)return;let mine=bookings.filter(b=>b.userId===u.id);$('allCount').textContent=mine.length;$('upCount').textContent=mine.filter(b=>['Upcoming','Pending'].includes(b.status)).length;$('doneCount').textContent=mine.filter(b=>b.status==='Completed').length;let q=($('bookingSearch')?.value||'').toLowerCase(),date=$('bookingDateFilter')?.value||'',time=$('bookingTimeFilter')?.value||'';let list=mine.filter(b=>activeFilter==='All'||(activeFilter==='Upcoming'?['Upcoming','Pending'].includes(b.status):b.status===activeFilter)).filter(b=>(b.type+' '+b.studio+' '+b.id).toLowerCase().includes(q)).filter(b=>!date||b.date===date).filter(b=>!time||(time==='Morning'?parseInt(b.time)<12:time==='Afternoon'?parseInt(b.time)>=12&&parseInt(b.time)<17:parseInt(b.time)>=17));$('allBookings').innerHTML=list.length?list.slice().sort((a,b)=>b.date.localeCompare(a.date)).map(bookingHTML).join(''):'<div class="card empty">No bookings match your search.</div>'}
+['bookingSearch','bookingDateFilter','bookingTimeFilter'].forEach(id=>$(id).addEventListener('input',renderBookings));$('bookingTabs').addEventListener('click',e=>{let b=e.target.closest('[data-filter]');if(!b)return;activeFilter=b.dataset.filter;document.querySelectorAll('#bookingTabs .tab').forEach(x=>x.classList.toggle('active',x===b));renderBookings()});
+function renderTransactions(){let u=currentUser();if(!u)return;let mine=transactions.filter(t=>t.userId===u.id);let paid=mine.filter(t=>t.status==='Successful');$('spentTotal').textContent='GH₵'+paid.reduce((s,t)=>s+t.amount,0).toFixed(2);$('transactionCount').textContent=mine.length;$('successCount').textContent=paid.length;$('transactionList').innerHTML=mine.length?mine.map(t=>`<div class="booking-row"><div><strong>${escapeHTML(t.description)}</strong><small>${new Date(t.date).toLocaleDateString()} · ${escapeHTML(t.method||'Payment')}</small></div><div style="text-align:right"><strong>GH₵${Number(t.amount).toFixed(2)}</strong><small class="status ${t.status==='Successful'?'':'pending'}">${t.status}</small></div></div>`).join(''):'<div class="card empty">No transactions yet. Payment records will appear here.</div>'; }
+function renderProfile(){let u=currentUser();if(!u)return;$('profileAvatar').textContent=initials(u.name);$('profileName').textContent=u.name;$('profileDetails').innerHTML=`<div class="detail"><small>Account ID</small><strong>${escapeHTML(u.id)}</strong></div><div class="detail"><small>Phone number</small><strong>${escapeHTML(u.phone)}</strong></div><div class="detail"><small>Email address</small><strong>${escapeHTML(u.email||'Not provided')}</strong></div><div class="detail"><small>Phone verification</small><strong>${u.verified?'Verified':'Pending verification'}</strong></div><div class="detail"><small>Member since</small><strong>${new Date(u.created).toLocaleDateString()}</strong></div>`;$('editName').value=u.name;$('editEmail').value=u.email||'';$('editPhone').value=u.phone}
+$('profileForm').addEventListener('submit',e=>{e.preventDefault();let u=currentUser();let other=users.some(x=>x.id!==u.id&&x.phone===$('editPhone').value.trim());if(other)return showToast('That phone number is used by another account.');u.name=$('editName').value.trim();u.email=$('editEmail').value.trim();u.phone=$('editPhone').value.trim();current=u;saveAll();refresh();renderProfile();showToast('Profile updated.')});
+function renderAdmin(){let u=currentUser();$('adminCustomers').textContent=users.length;$('adminBookings').textContent=bookings.length;$('adminPending').textContent=bookings.filter(b=>b.status==='Pending').length;$('adminTable').innerHTML=bookings.length?bookings.slice().reverse().map(b=>`<tr><td>${escapeHTML(b.customer)}</td><td>${escapeHTML(b.type)}</td><td>${escapeHTML(b.date)} · ${escapeHTML(b.time)}</td><td><select onchange="adminUpdate('${b.id}','status',this.value)"><option ${b.status==='Pending'?'selected':''}>Pending</option><option ${b.status==='Upcoming'?'selected':''}>Upcoming</option><option ${b.status==='Completed'?'selected':''}>Completed</option><option ${b.status==='Cancelled'?'selected':''}>Cancelled</option></select></td><td><select onchange="adminPayment('${b.id}',this.value)"><option ${b.payment==='Unpaid'?'selected':''}>Unpaid</option><option ${b.payment==='Paid'?'selected':''}>Paid</option></select></td><td><button class="link danger" onclick="deleteBooking('${b.id}')">Delete</button></td></tr>`).join(''):'<tr><td colspan="6">No booking activity yet.</td></tr>';$('adminUsers').innerHTML=users.map(x=>`<tr><td>${escapeHTML(x.id)}</td><td>${escapeHTML(x.name)}</td><td>${escapeHTML(x.phone)}</td><td>${escapeHTML(x.email||'—')}</td></tr>`).join('')}
+function adminUpdate(id,k,v){let b=bookings.find(x=>x.id===id);if(b){b[k]=v;saveAll();refresh();renderAdmin();showToast('Booking updated.')}}
+function adminPayment(id,v){let b=bookings.find(x=>x.id===id);if(!b)return;b.payment=v;if(v==='Paid'&&!transactions.some(t=>t.bookingId===id)){transactions.push({id:'TX-'+Date.now(),userId:b.userId,bookingId:id,description:b.type,amount:0,status:'Successful',method:'Marked paid by studio',date:new Date().toISOString()})}saveAll();renderAdmin();refresh();showToast('Payment status updated. Add the actual amount in your payment system.')}
+function deleteBooking(id){if(!confirm('Delete this demo booking?'))return;bookings=bookings.filter(b=>b.id!==id);saveAll();renderAdmin();refresh()}
+function toggleTheme(){let t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;localStorage.setItem('dc_theme',t)}
+document.documentElement.dataset.theme=localStorage.getItem('dc_theme')||'light';
+$('sessionDate').min=new Date().toISOString().split('T')[0];
+if(current){let valid=users.find(u=>u.id===current.id);if(valid)loginUser(valid)}
+</script>
+<!-- Supabase connection -->
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+<script>
+  const SUPABASE_URL = "https://bwvuyzcechmfeljsbpsc.supabase.co";
+  const SUPABASE_KEY = "sb_publishable_q5XcqTpKcrNETAAAA7akyg_pgYD-NAL";
+
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
+
+  console.log("Dave Choice Supabase connection is ready!");
+  supabaseClient.auth.getSession().then(({ data, error }) => {
+  if (error) {
+    console.error("Connection failed:", error.message);
+  } else {
+    console.log("Supabase connection successful!");
+  }
+});
+</
+document.getElementById("loginForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const email = document.getElementById("loginEmail").value.trim();
+  const password = document.getElementById("loginPassword").value;
+
+  const button = this.querySelector('button[type="submit"]');
+  button.disabled = true;
+  button.textContent = "Signing in...";
+
+  const { data, error } = await supabaseClient.auth.signInWithPassword({
+    email: email,
+    password: password
+  });
+
+  button.disabled = false;
+  button.textContent = "Sign in";
+
+  if (error) {
+    alert("Login failed: " + error.message);
+    return;
+  }
+
+  alert("Welcome back to Dave Choice!");
+
+  // Show your existing customer dashboard
+  document.getElementById("loginBox").style.display = "none";
+  document.getElementById("dashboard").style.display = "block";
+});
+script>
+</body>
+</html>
